@@ -8,63 +8,29 @@ if ( ! defined( 'ABSPATH' ) ) {
 $email_form = '<form id="raviol" class="'.$form_class.'" method="post">
 	<div class="rvl-row rvl-row-cols-1 rvl-row-cols-sm-2">
 		<div class="rvl-col">
-		
-		
-		
-	<div class="rvl-form-floating rvl-mb-3 rvl-mb-sm-4">		
-		<input
-		type="text"
-		name="raviol_name"
-		placeholder="'.esc_attr($name_label).'"
-		id="raviol_name"
-		'.(isset($error_class['form_name']) ? ' class="rvl-form-control rvl-is-invalid"' : ' class="rvl-form-control"').'
-		value="'.esc_attr($form_data['form_name']).'"
-		aria-required="true"
-		/>
-	
-	<label
-		for="raviol_name">'.esc_attr($name_label).':
-	</label>
-		
-	</div>
-
-		</div>
-		<div class="rvl-col">
-		
-		
-			<div class="rvl-form-floating rvl-mb-3 rvl-mb-sm-4">
-			
-			  <input
-			  type="text"
-			  class="'.(isset($error_class['form_second_name']) ? 'rvl-form-control rvl-is-invalid' : 'rvl-form-control').'"
-			  id="raviol_second_name"
-			  name="raviol_second_name"
-			  placeholder="'.esc_attr($second_name_label).'"
-			  value="'.esc_attr($form_data['form_second_name']).'"
-			  >
-			  
-			<label
-			  for="raviol_second_name"
-			  >'.esc_attr($second_name_label).'
-			</label>
-			  
+			<div class="rvl-form-floating rvl-mb-3 rvl-mb-sm-4">		
+				<input type="text" name="raviol_name" placeholder="'.esc_attr($name_label).'" id="raviol_name"'.(isset($error_class['form_name']) ? ' class="rvl-form-control rvl-is-invalid"' : ' class="rvl-form-control"').' value="'.esc_attr($form_data['form_name']).'" aria-required="true"/>
+				<label for="raviol_name">'.esc_attr($name_label).':	</label>		
 			</div>
-			
-			
+		</div>
+		<div class="rvl-col">	
+			<div class="rvl-form-floating rvl-mb-3 rvl-mb-sm-4">		
+			  <input type="text" class="'.(isset($error_class['form_second_name']) ? 'rvl-form-control rvl-is-invalid' : 'rvl-form-control').'" id="raviol_second_name" 			  name="raviol_second_name" placeholder="'.esc_attr($second_name_label).'" value="'.esc_attr($form_data['form_second_name']).'" >
+			<label for="raviol_second_name" >'.esc_attr($second_name_label).'</label>
+			</div>
 		</div>
 	</div>
 	<div class="rvl-row rvl-row-cols-1 rvl-row-cols-sm-2">
-		<div class="rvl-col">	
-			
-			<div class="rvl-form-floating rvl-mb-3 rvl-mb-sm-4">
-				<input type="email" name="raviol_email" placeholder="'.esc_attr($email_label).'" id="raviol_email" '.(isset($error_class['form_email']) ? ' class="rvl-form-control rvl-is-invalid"' : ' class="rvl-form-control"').' value="'.esc_attr($form_data['form_email']).'" aria-required="true" />
-				<label for="raviol_email">'.esc_attr($email_label).'</label>
-			</div>
-		</div>
 		<div class="rvl-col">
 			<div class="rvl-form-floating rvl-mb-3 rvl-mb-sm-4">
 				  <input type="text" class="'.(isset($error_class['form_subject']) ? 'rvl-form-control rvl-is-invalid' : 'rvl-form-control').'" id="raviol_subject" name="raviol_subject" placeholder="'.esc_attr($second_name_label).'" value="'.esc_attr($form_data['form_subject']).'">
 				  <label for="raviol_subject">'.esc_attr($subject_label).'</label>
+			</div>
+		</div>
+		<div class="rvl-col">	
+			<div class="rvl-form-floating rvl-mb-3 rvl-mb-sm-4">
+				<input type="email" name="raviol_email" placeholder="'.esc_attr($email_label).'" id="raviol_email" '.(isset($error_class['form_email']) ? ' class="rvl-form-control rvl-is-invalid"' : ' class="rvl-form-control"').' value="'.esc_attr($form_data['form_email']).'" aria-required="true" />
+				<label for="raviol_email">'.esc_attr($email_label).'</label>
 			</div>
 		</div>
 	</div>
@@ -85,5 +51,6 @@ $email_form = '<form id="raviol" class="'.$form_class.'" method="post">
 		<small class="rvl-col-12 rvl-small">
 			'.esc_attr($privacy_label).'
 		</small>
+	</div>
 	</div>
 </form>';

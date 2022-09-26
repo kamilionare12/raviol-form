@@ -21,7 +21,6 @@ add_action( 'admin_menu', 'raviol_menu_page' );
 function raviol_admin_init() {
 	// general section
 	add_settings_section( 'raviol-general-section', esc_attr__( 'General', 'raviol-form' ), '', 'raviol-general' );
-
 	add_settings_field( 'raviol-field-22', esc_attr__( 'Administrator Email', 'raviol-form' ), 'raviol_field_callback_22', 'raviol-general', 'raviol-general-section' );
 	register_setting( 'raviol-general-options', 'raviol-setting-22', array('sanitize_callback' => 'sanitize_email') );
 
@@ -96,7 +95,22 @@ function raviol_field_callback_15() {
 	$value = get_option( 'raviol-setting-15' );
 	?>
 	<h2><?php echo esc_html__('Documentation', 'raviol-form'); ?></h2>
-	<p><i><?php esc_attr_e( 'Check this video on how to connect Hubspot account, for automaticaly adding contacts.', 'raviol-form' ); ?></i></p>
+	<h3>Installation</h3>
+	<p>1) Upload or clone "raviol-form" folder at "wp-content/plugins" directory</p>
+	<p>2) Add shortcode [raviol-contact] on your page</p>
+	<p>3) Customize settings page</p>
+	<h3>How to use</h3>
+	<p>After installation add shortcode [raviol-contact] anywhere on the page to display your form.</p>
+	<h3>Settings page</h3>
+	<p>This page can be found inside admin menu: "Raviol Form".</p>
+	<p>Setting up Administrator Email</p>
+	<p>Save or delete submissions and settings on plugin deactivation.</p>
+	<p>Download email JSON file that collects subscribers data.</p>
+	<p>Hubspot integration via API</p>
+	<h3>Demo</h3>
+	<p>http://h165286.srv12.test-hf.su/sample-page/</p>
+	<h4><i><?php esc_attr_e( 'Check this video on how to connect Hubspot account, for automaticaly adding contacts.', 'raviol-form' ); ?></i></h4>
+	<iframe width="700" height="360" src="https://www.youtube.com/embed/XNvoPOEgzxw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	<?php
 }
 

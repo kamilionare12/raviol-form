@@ -151,7 +151,7 @@ if (empty($raviol_atts['error_email'])) {
 }
 
 // error subject label
-$value = $error_subject_label;
+/* $value = $error_subject_label;
 if (empty($raviol_atts['error_subject'])) {
 	if (empty($value)) {
 		$error_subject_label = __( 'Please enter at least 2 characters', 'raviol-form' );
@@ -160,7 +160,7 @@ if (empty($raviol_atts['error_subject'])) {
 	}
 } else {
 	$error_subject_label = $raviol_atts['error_subject'];
-}
+} */
 
 // error sum label
 $value = $error_sum_label;
