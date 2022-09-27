@@ -28,7 +28,7 @@ register_activation_hook( __FILE__, 'activateLogs' );
 register_deactivation_hook( __FILE__, 'deactivatePlugin' );
 
 // enqueue plugin scripts
-function raviol_scripts() {
+function raviol_scripts_plugin() {
 	wp_enqueue_style('raviol_style', plugins_url('/assets/css/raviol-style.css',__FILE__));
 	wp_enqueue_script('raviol_anchor_script', plugins_url( '/assets/js/raviol-script.js' , __FILE__ ), '', '', true);
 	//wp_enqueue_script('raviol_validation_script', plugins_url( '/assets/js/jquery.validate.min.js' , __FILE__ ), '', '', true);
@@ -45,7 +45,7 @@ function raviol_scripts() {
     );
     wp_enqueue_script('variations-editor');
 }
-add_action( 'wp_enqueue_scripts', 'raviol_scripts' );
+add_action( 'wp_enqueue_scripts', 'raviol_scripts_plugin' );
 
 // admin styles
 function raviol_admin_style() {
