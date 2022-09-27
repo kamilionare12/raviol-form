@@ -1,0 +1,114 @@
+{
+	"apiVersion": 2,
+	"name": "ptqblock/post-types-query",
+	"title": "Raviol form",
+	"description": "Display a list of posts based on (custom) post types.",
+	"category": "widgets",
+	"textdomain": "PTQBlock",
+	"supports": {
+		"html": false,
+		"align": true
+	},
+	"attributes": {
+		"selectedPostType": {
+			"type": "string",
+			"default": "post"
+		},
+		"selectedCategories": {
+			"type": "array"
+		},
+		"selectedTags": {
+			"type": "array"
+		},
+		"selectedAuthor": {
+			"type": "string"
+		},
+		"postsToDisplay": {
+			"type": "number",
+			"default": 5
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"displayPublicationDate": {
+			"type": "boolean",
+			"default": false
+		},
+		"displayUpdateDate": {
+			"type": "boolean",
+			"default": false
+		},
+		"displayAuthor": {
+			"type": "boolean",
+			"default": false
+		},
+		"displayFeaturedImage": {
+			"type": "boolean",
+			"default": false
+		},
+		"displayExcerpt": {
+			"type": "boolean",
+			"default": false
+		},
+		"publicationDateLabel": {
+			"type": "string",
+			"default": "Published on:"
+		},
+		"updateDateLabel": {
+			"type": "string",
+			"default": "Updated on:"
+		},
+		"authorLabel": {
+			"type": "string",
+			"default": "By:"
+		},
+		"hidePublicationDateLabel": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideUpdateDateLabel": {
+			"type": "boolean",
+			"default": false
+		},
+		"hideAuthorLabel": {
+			"type": "boolean",
+			"default": false
+		},
+		"featuredImageAlignment": {
+			"type": "string",
+			"enum": ["left", "center", "right"]
+		},
+		"featuredImageSlug": {
+			"type": "string",
+			"default": "thumbnail"
+		},
+		"featuredImageHeight": {
+			"type": "number",
+			"default": null
+		},
+		"featuredImageWidth": {
+			"type": "number",
+			"default": null
+		},
+		"postsLayout": {
+			"type": "string",
+			"default": "list"
+		},
+		"displayListMarkers": {
+			"type": "boolean",
+			"default": true
+		},
+		"gridColumns": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

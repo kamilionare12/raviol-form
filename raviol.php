@@ -1,8 +1,8 @@
 <?php
 /*
  * Plugin Name: Raviol Form
- * Description: Lightweight form with fields: First Name, Last Name, Subject, Message, E-mail and automated hubspot.com integration with "Private app" API. In order to show the form just use the shortcode [raviol-contact] anywhere on the page
- * Version: 1.0
+ * Description: Lightweight form with fields: First Name, Last Name, Subject, Message, E-mail and automated hubspot.com integration with "Private app" API. In order to show the form just use the shortcode [raviol-contact] or gutenberg block anywhere on the page
+ * Version: 1.0.1
  * Author: Kamilionare
  * Author URI: https://t.me/kamilionare
  * License: GNU General Public License v3
@@ -15,6 +15,8 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+require_once plugin_dir_path( __FILE__ ) . '/block/block.php';
 
 // load plugin text domain
 function raviol_init() {

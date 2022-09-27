@@ -1,4 +1,7 @@
 CHANGELOG
 =========
+= Version 1.0.1 =
+* Added Gutenberg block with in form. Debug some warnings, 
+
 = Version 1.0 =
 * First release

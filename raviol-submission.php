@@ -97,7 +97,7 @@ if ($error == false) {
 	// save form submission in database
 	$raviol_post_information = array(
 		'post_title' => wp_strip_all_tags($subject),
-		'post_content' => $form_data['form_name']."\r\n\r\n".$form_data['form_second_name']."\r\n\r\n".$form_data['form_email']."\r\n\r\n".$subject_in_content.$form_data['form_message'].$privacy_consent.$ip_address,
+		'post_content' => $form_data['form_name']."\r\n\r\n".$form_data['form_second_name']."\r\n\r\n".$form_data['form_email']."\r\n\r\n".$subject_in_content.$form_data['form_message'].$ip_address,
 		'post_type' => 'submission',
 		'post_status' => 'pending',
 		'meta_input' => array( 
@@ -107,7 +107,7 @@ if ($error == false) {
 	$post_id = wp_insert_post($raviol_post_information);
 
 	// mail
-	$content = $form_data['form_name']."\r\n\r\n".$form_data['form_second_name']."\r\n\r\n".$form_data['form_email']."\r\n\r\n".$subject_in_content.$form_data['form_message'].$privacy_consent.$ip_address;
+	$content = $form_data['form_name']."\r\n\r\n".$form_data['form_second_name']."\r\n\r\n".$form_data['form_email']."\r\n\r\n".$subject_in_content.$form_data['form_message'].$ip_address;
 	$headers = "Content-Type: text/html; charset=UTF-8" . "\r\n";
 	$headers .= "From: ".$form_data['form_email']." <".$from.">" . "\r\n";$headers .= "From: ".$form_data['form_email']." <".$from.">" . "\r\n";
 	$headers .= "Reply-To: <".$form_data['form_email'].">" . "\r\n";
