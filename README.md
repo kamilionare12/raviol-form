@@ -46,3 +46,13 @@ http://h165286.srv12.test-hf.su/sample-page/
 ## Hubspot Installation
 
 Watch video https://www.youtube.com/watch?v=XNvoPOEgzxw
+
+```
+CHANGELOG
+=========
+= Version 1.0.1 =
+* Added Gutenberg block with in form. Debug some warnings, 
+
+= Version 1.0 =
+* First release
+```
