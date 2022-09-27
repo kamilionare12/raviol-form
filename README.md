@@ -1,6 +1,8 @@
 # Lightweight contact form wordpress plugin
 
-Lightweight contact form wordpress plugin with fields: First Name, Last Name, Subject, Message, E-mail and automated Hubspot.com integration with "Private app" API. In order to show the form just use the shortcode [raviol-contact] anywhere on the page
+Now contact form can be added to page using Gutenberg block.
+
+Lightweight contact form wordpress plugin with fields: First Name, Last Name, Subject, Message, E-mail and automated Hubspot.com integration with "Private app" API. In order to show the form just use the shortcode [raviol-contact] or Gutenberg block anywhere on the page
 
 ## Description
 
@@ -14,7 +16,7 @@ Store contacts automatically on Hubspot.com account via API (easy setup)
 
 1) Upload or clone "raviol-form" folder at "wp-content/plugins" directory
 
-2) Add shortcode on your page
+2) Add shortcode on your page or Gutenberg block
 ```
 [raviol-contact] 
 ```
@@ -23,7 +25,7 @@ Store contacts automatically on Hubspot.com account via API (easy setup)
 
 ## How to use
 
-After installation add shortcode [raviol-contact] anywhere on the page to display your form.
+After installation add shortcode [raviol-contact] or Gutenberg block anywhere on the page to display your form.
 
 ## Settings page
 
